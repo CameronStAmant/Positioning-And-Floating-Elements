@@ -1,0 +1,138 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 44px repeat(3, 1fr);
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border: 1px solid rgb(215, 215, 215);
+  grid-area: 1 / 1 / 1/ -1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 44px;
+  margin: 0;
+  padding: 0 20px 0 20px;
+}
+
+nav > ul {
+  list-style-type: none;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-navigation {
+  grid-column: 1 / 1;
+  display: grid;
+  gap: 20px;
+  place-self: center start;
+}
+
+.nav-navigation > li {
+  /* padding: 0 12px; */
+}
+
+.nav-navigation > li > h4 {
+  margin: 0;
+}
+
+.company {
+  grid-column: 3 / 5;
+  margin: 0;
+  place-self: center;
+}
+
+.nav-sub-login {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-column: 6;
+  gap: 10px;
+}
+
+.subscribe {
+  grid-column: 3 / 16;
+  place-self: center stretch;
+}
+
+.login {
+  grid-column: 16 / 21;
+  place-self: center stretch;
+}
+
+.nav-sub-login > li > button {
+  background-color: #567b95;
+  color: white;
+  padding: 5px;
+  border: none;
+  height: 75%;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 0.7rem;
+}
+
+article {
+  /* border: 10px solid red; */
+  grid-area: 2 / 1 / -1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1 {
+  grid-column-start: 5;
+  grid-column-end: span 4;
+}
+
+address {
+  grid-column: 5 / span 4;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 13px;
+}
+
+time {
+  grid-column: 5 / span 4;
+  font-size: 0.8rem;
+}
+
+p {
+  grid-column-start: 5;
+  grid-column-end: span 4;
+  /* border: 10px solid aqua; */
+  font-size: 1.5rem;
+}
+
+body h4 {
+  grid-column-start: 5;
+  grid-column-end: span 4;
+  margin: 0;
+}
+
+.cover-image {
+  grid-column: 2 / span 8;
+}
+
+.cover-image > img {
+  width: 120%;
+}
+
+.article-image-large {
+  grid-column: 4 / span 6;
+}
+
+.article-image-medium {
+  grid-column: 4 / span 6;
+}
+
+figcaption {
+  font-size: 1rem;
+}
+
+.video {
+  margin: 0;
+  grid-column: 5 / span 4;
+}
